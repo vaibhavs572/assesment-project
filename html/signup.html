@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body  style="background-image: url(../res/images/logback2.png); background-size:100% ;background-repeat: no-repeat;">
+
+<p style="text-shadow: 1px 1px 20px #1B1464" align="center"><u><font size="7" color="White" face="Ink Free" >SIGN UP FORM</font></u></p> 
+<form onSubmit="return func()" id="form">
+<center><b>
+<table class="bg">
+<tr><td  align="left"><b>Name:</b></td><td><input type="text" size="20" maxlength="100" name="name" placeholder="Full Name" required></td></tr>
+<tr><td  align="left"><b>Address:</td><td><textarea></textarea></td></tr>
+<tr><td  align="left"><b>Date of Birth:</b></td><td><input type="date" required>
+</td></tr><br>
+<tr><td  align="left"><b>Profile Picture:</td><td colspan="2" align="center"><input type="file" name="uploadField"/></td></tr>
+<tr><td  align="left"><b>Gender:</b></td><td><input type="radio" name="g" style="text-decoration:none">Male <input type="radio" name="g">Female <input type="radio" name="g">Other </td></tr><br>
+<tr><td  align="left"><b>Country:</b></td><td><select>
+<option selected>-country-</option>
+<option>India</option><option>England</option><option>Argentina</option><option>Austrailia</option><option>Indonesia</option><option>China</option></select></td></tr>
+<tr><td  align="left"><b>Mobile No.:</b></td><td><select><option selected>+91</option></select><input id="mobile" type="digit" size="10" maxlength="10" name="mob" required></td></tr>
+<tr><td  align="left"><b>Email-id:</b></td><td><input type="text" id="email"
+	required></td></tr>
+<tr><td colspan="2" align="center"><input type="reset" value="RESET"> <input type="submit" value="SIGN UP"></td></tr>
+<tr><td colspan="2"><center><a href="login.html"><font color="green" size="5"> Already registered?Login. </a></td></tr></center>
+</table>
+</form>
+<script src="signup.js">
+</script>
+</body>	
+</html>

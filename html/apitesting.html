@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>   
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<p id="demo"></p>
+<div class="div1">
+
+<button type="button" onclick="fun()" class="btn btn-primary">Click here for list</button><br><br>
+</div>
+<div id="result" class="btn btn-primary"></div>
+
+
+<script>
+function fun() {
+  var xhttp;
+  var url="https://reqres.in/api/users?page=2";
+  
+  
+  if (window.XMLHttpRequest) {
+
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result").innerHTML = this.responseText;
+      var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=0;i<6;i++){
+      var res=res+"id="+obj.data[i].id+'<br>';
+      var res=res+"email="+obj.data[i].email+'<br>';
+      var res=res+"first-name="+obj.data[i].first_name+'<br>';
+      var res=res+"las-name="+obj.data[i].last_name+'<br>';  
+      var res=res+"image-url="+obj.data[i].avatar+'<br>';    
+	  
+    }
+	
+
+      document.getElementById("result").innerHTML=res;
+    }
+  };
+  xhttp.open("GET", url , true);
+
+  xhttp.send();
+  console.log(url);
+}
+</script>
+</body>
+</html>
+

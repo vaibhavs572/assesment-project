@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VOLVO</title>
+	 <link rel="stylesheet" type="text/css" href="../css/style.css">
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body style="background-color: #333; ">
+
+	<div class="middle">
+	<img src="../res/images/S60.jpg" class="image" style="border-radius: 10px;width: 900px;height: 450px;" >
+    <div class="text">
+     <button type="button" value="S-class" class="btn btn-info" onclick="fun2()">S60</button>
+	  <h1 id="demo1"></h1>
+	  <div id="result2"></div>
+      <script>
+	function fun2() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result2").innerHTML = this.responseText;
+       var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=18;i<19;i++){
+      var res=res+obj.Results[i].MakeId+'<br>'+"<br>";
+      var res=res+obj.Results[i].MakeName+'<br>';
+	  var res=res+obj.Results[i].VehicleTypeId+'<br>'+"<br>";
+	   var res=res+obj.Results[i].VehicleTypeName+'<br>';
+      }
+      document.getElementById("result2").innerHTML=res;
+  }
+  };
+  xhttp.open("GET", "https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json" , true);
+  xhttp.send();
+}
+</script>
+    </div>
+    </div>
+	</div>
+
+<div class="middle">
+	<img src="../res/images/S90.jpg" class="image" style="border-radius: 10px;width: 900px;height: 450px;" >
+	
+    <div class="text">
+      <button type="button" value="S-class" class="btn btn-info" onclick="fun3()">S90</button>
+	  <h1 id="demo1"></h1>
+	  <div id="result3"></div>
+      <script>
+	function fun3() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result3").innerHTML = this.responseText;
+       var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=21;i<22;i++){
+      var res=res+obj.Results[i].MakeId+'<br>'+"<br>";
+      var res=res+obj.Results[i].MakeName+'<br>';
+	  var res=res+obj.Results[i].VehicleTypeId+'<br>'+"<br>";
+	   var res=res+obj.Results[i].VehicleTypeName+'<br>';
+      }
+      document.getElementById("result3").innerHTML=res;
+  }
+  };
+  xhttp.open("GET", "https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json" , true);
+  xhttp.send();
+}
+</script>
+    </div>
+    </div>
+	</div>
+	
+
+	<div class="middle">
+	<img src="../res/images/V40.jpg" class="image" style="border-radius: 10px;width: 2960px;height: 450px;" >
+	<div class="middle">
+    <div class="text">
+      <button type="button" value="S-class" class="btn btn-info" onclick="fun4()">V40</button>
+	  <h1 id="demo1"></h1>
+	  <div id="result4"></div>
+      <script>
+	function fun4() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result4").innerHTML = this.responseText;
+       var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=19;i<20;i++){
+      var res=res+obj.Results[i].MakeId+'<br>'+"<br>";
+      var res=res+obj.Results[i].MakeName+'<br>';
+	  var res=res+obj.Results[i].VehicleTypeId+'<br>'+"<br>";
+	   var res=res+obj.Results[i].VehicleTypeName+'<br>';
+      }
+      document.getElementById("result4").innerHTML=res;
+  }
+  };
+  xhttp.open("GET", "https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json" , true);
+  xhttp.send();
+}
+</script>
+    
+
+    </div>
+    </div>
+	</div>
+
+	<div class="middle">
+	<img src="../res/images/XC40.jpg" class="image" style="border-radius: 10px;width: 2960px;height: 450px;" >
+	<div class="middle">
+    <div class="text">
+     <button type="button" value="S-class" class="btn btn-info" onclick="fun5()">XC40</button>
+	  <h1 id="demo1"></h1>
+	  <div id="result5"></div>
+      <script>
+	function fun5() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result5").innerHTML = this.responseText;
+       var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=17;i<18;i++){
+      var res=res+obj.Results[i].MakeId+'<br>'+"<br>";
+      var res=res+obj.Results[i].MakeName+'<br>';
+	  var res=res+obj.Results[i].VehicleTypeId+'<br>'+"<br>";
+	   var res=res+obj.Results[i].VehicleTypeName+'<br>';
+      }
+      document.getElementById("result5").innerHTML=res;
+  }
+  };
+  xhttp.open("GET", "https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json" , true);
+  xhttp.send();
+}
+</script>
+    </div>
+    </div>
+	</div>
+	
+
+	<div class="middle">
+	<img src="../res/images/XC60.jpg" class="image" style="border-radius: 10px;width: 910px;height: 450px;" > 
+	
+    <div class="text">
+     <button type="button" value="S-class" onclick="fun6()" class="btn btn-info">XC60</button>
+	  <h1 id="demo1"></h1>
+	  <div id="result6"></div>
+      <script>
+	function fun6() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("result6").innerHTML = this.responseText;
+       var obj=JSON.parse(this.responseText);
+      var res=" ";
+      for (i=12;i<13;i++){
+      var res=res+obj.Results[i].MakeId+'<br>'+"<br>";
+      var res=res+obj.Results[i].MakeName+'<br>';
+	  var res=res+obj.Results[i].VehicleTypeId+'<br>'+"<br>";
+	   var res=res+obj.Results[i].VehicleTypeName+'<br>';
+      }
+      document.getElementById("result6").innerHTML=res;
+  }
+  };
+  xhttp.open("GET", "https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMake/merc?format=json" , true);
+  xhttp.send();
+}
+</script>
+    </div>
+    </div>
+	</div>
+
+	
+
+	
+<center><button type"button" class="btn btn-info" ><a href="C:\Users\acer\OneDrive\Desktop\api project\index.html"><font color="red">Home</font></a></button></center>
+</body>
+</html>

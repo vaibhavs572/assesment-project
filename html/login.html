@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<body class="all" id="result">
+	<br>
+<h1 class="align">LOGIN FORM</h1>
+<form class="login">
+<center>
+	<table class="form1"><tr>
+		<td class="white1" >Email:</td>
+		<td><input type="text" id="email" size="20" maxlength="50" name="E-mail" placeholder="E-Mail" style="height:30px;width: 100%" required ></td>
+	</tr>
+	<br>
+<tr>
+	<td class="white1" >Password:</td>
+	<td>
+		<input type="password" id="password1" name="pass" size="20" maxlength="50" placeholder="password"style="height:30px;width: 100%" required></td>
+	</tr>
+	<br>
+<tr>
+	<td colspan="2" class="white1">
+		<input type="checkbox">Keep me logged in. </td>
+	</tr>	
+</table>
+<br>
+<input type="button" value="reset"  class="btn btn-warning">
+<input type="button"  value="Login" class="btn btn-warning" onclick="f1()">
+
+<h1 id="demo"></h1>
+<h2 id="result"></h2>
+<h3 id="url"><a href="C:\Users\acer\OneDrive\Desktop\api project\index.html"></a></h3>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script>
+	var q1=document.getElementById("email").value;
+	var p1=document.getElementById("password1").value;
+	var reqObject= {
+		"email": q1,
+		"password": p1
+	}
+
+
+	var reqBody = JSON.stringify(reqObject);
+
+	function f1()
+	{
+		var q1=document.getElementById("email").value;
+		var p1=document.getElementById("password1").value;
+		var reqObject= {
+			"email": q1,
+			"password": p1
+	}
+	  
+		var xhr = new XMLHttpRequest();
+		document.getElementById("demo")
+		xhr.open("GET", "https://reqres.in/api/login", true);
+
+		//Send the proper header information along with the request
+		xhr.setRequestHeader("Content-Type", "application/json");
+			xhr.onreadystatechange = function(){
+				if( xhr.readyState == 4) {
+				location.replace("file:///C:/Users/acer/OneDrive/Desktop/api%20project/newfrontpage.html")
+					console.log(xhr.responseText);
+			}
+			}
+		
+		xhr.onload = function(){
+			//console.log("This the response from server", xhr.responseText);
+	};
+	//console.log(typeof reqBody);
+	xhr.send(reqObject);
+	}
+
+
+//Send an AJAX request when the page loads
+	$(document).ready(function(){
+		console.log('document is ready');
+
+	$.ajax({
+		url: "https://reqres.in/api/login",
+		type: "POST",
+		data: reqObject,
+		success: function(response){
+			console.log(response);
+    },
+		error: function(jqXHR, errorText, error){
+			console.log("We have an error", error);
+    }
+});
+});
+
+	</script>
+
+ <br>
+ <br>
+<a href="signup.html" class="kindly" > New User?Kindly Sign Up. </a>
+</center>
+</form>
+</fieldset>
+</body>
+</html>

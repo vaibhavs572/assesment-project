@@ -1,0 +1,218 @@
+
+
+.h1{
+	font-family: courier;
+	font-color:black;
+	 font-family: "Times New Roman", Times, serif;
+	
+}
+
+
+
+
+
+.all{
+	background-image:url(../res/images/main.jpg);
+	background-size:cover;
+	width: 1490px;
+        
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+
+
+
+
+.list{
+	list-style-type: none;
+
+}
+
+.mainbg{
+	background-color: rgba(57,21,97,0.5);
+}
+
+
+.margin{
+	text-align: center;
+	width:1480px;
+	border-radius:10px;
+}
+
+.head{
+	background:#333;
+	margin-left:-4px;
+	width: 98.1%;
+ 	height: 49px;
+	font-size:35px ;
+	font-family:cursive;
+	margin-top: -15px;
+
+}
+
+.align{
+display: inline;
+margin-right:60pt;
+text-decoration:none;
+}
+
+
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-align: right;
+}
+.ausbg {
+	background-image:url(../res/images/aboutus.png);
+	background-size:cover;
+	background-repeat:no-repeat; 
+}
+.ealerts{
+	color: red;
+	font-size: 30px;
+}
+.subealerts{
+	text-align: center;
+}
+.details{
+	font-family: cursive;
+	font-size: 18px;
+}
+
+.middle{
+	display: inline-flex;
+}
+
+.list{
+	color:blue;
+}
+
+
+
+.my-info{
+	background-image: url(../res/images/image1.jpeg), url(../res/background/white-3d-modern-background-design_53876-88246.jpg);
+ 	background-size: 1050px 660px; 
+ 	border-radius: 25px;
+	background-position: right bottom, left top;
+	height:690px;
+  	background-repeat: no-repeat,repeat;
+  	padding: 80px;
+	text-align-last: left;
+ 	
+
+}
+
+
+
+
+
+
+
+
+
+.soft-skills{
+	background-image: url(../res/background/soft-skills-in-biotechnology-career-1.jpg), url(../res/background/white-3d-modern-background-design_53876-88246.jpg);
+  	background-size: 850px 719px;
+ 	border-radius: 25px;
+	background-position: right bottom, left top;
+	width: 99%;
+	background-position: left;
+	border-style:dotted;
+  	background-repeat: no-repeat,repeat;
+ 	padding:220px;
+	text-align-last: right;
+
+}
+
+
+
+.education{
+	background-image: url(../res/background/vaibhav.jpg), url(../res/background/white-3d-modern-background-design_53876-88246.jpg);
+	background-size: 780px 680px;
+	background-position: right bottom, left top;
+	background-repeat: no-repeat,repeat; 
+  	background-repeat: no-repeat;
+	border-radius: 25px;
+	border-style:dotted;
+ 	padding: 190px;
+	text-align-last: left;
+
+
+}
+
+.aboutme-variables{
+	font-size: 20px;
+	color:black;
+}
+
+
+.About-me{
+	background-image: url(../res/background/44299297_s.jpg), url(../res/background/sunset-with-the-hills.jpg) ;
+	background-size: 800px 719px;
+ 	background-position: left bottom, left top;
+  	background-repeat: no-repeat,repeat; 
+	border-radius: 25px;
+	margin-left:2px;
+ 	padding: 200px;
+	border-style:dotted;
+	text-align-last: right;
+	background-size: fill;
+	
+ 
+}
+
+
+.main{
+	background-image: url(../res/background/215251.jpg);
+ 	background-size: 1590px 600px;
+ 	border-radius: 25px;
+  	background-repeat: no-repeat;
+	width:99%;
+  	padding: 10px;
+	border-style:dotted;
+	text-align-last: left;
+ 	background-size: fill;
+}
+
+.contact{
+	background-image: url(../res/background/164830560-telephone-wallpapers.jpg);
+  	background-size: 1450px 799px;
+ 	border-radius: 25px;
+  	background-repeat: no-repeat;
+	background-size: fill;
+	margin-left:0px;
+ 	padding:250px;
+	text-align-last: left;
+ 
+}
+
+.mySlides{height:400px;
+	width: 100.71%;
+	position: relative;
+	top: 13px;
+	border-style:dotted;
+	margin-left:-7px;
+
+}
+
+
+.slideshow{
+		text-align: center;
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
