@@ -1,1 +1,1 @@
-# vaibhavs572.github.io-project
+# vaibhavs572.github.io/project
