@@ -1,6 +1,7 @@
 # UpGrad Cars Website
 Since our generaation loves speed, this website describes the fastest and most luxerious cars all around the world. 
-This site also provides us with the location of the service centers of the particular car.
+This site also provides us with the location of the service centers of the particular car. And also gives a brief 
+description about the functioning of the parts.
   
 
 # Technologies Used -
