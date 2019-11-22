@@ -276,7 +276,7 @@ border-radius:25px;
 .middle{
 	display: inline-flex;
 	height:450px;
-	width:1500px;
+	width:100%;
 }
 
 .button{
