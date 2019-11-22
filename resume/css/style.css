@@ -47,7 +47,9 @@
  	height: 49px;
 	font-size:35px ;
 	font-family:cursive;
-	margin-top: -15px;
+	top:0;
+	margin-top:2px;
+	position: fixed;
 
 }
 
